@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pandoc-filter": "^1.0.0"
+  }
+}
