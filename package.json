@@ -21,6 +21,7 @@
   "homepage": "https://github.com/iamapen/md2redmine#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
