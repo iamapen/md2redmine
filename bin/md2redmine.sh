@@ -1,8 +1,11 @@
 #!/bin/bash
 THIS_SCRIPT=$(readlink $0)
+if [ "$THIS_SCRIPT" = "" ]; then
+  THIS_SCRIPT=$0
+fi
 BASE_DIR=$(cd $(dirname "$THIS_SCRIPT")/..;pwd)
 
-VERSION=1.0.0
+VERSION=0.0.1
 
 function usage() {
   cat <<__EOF__
@@ -23,4 +26,3 @@ else
 fi
 
 pandoc --from=gfm --to=textile "$INPUT" --filter="$BASE_DIR/src/filters/md2redmine.js"
-
