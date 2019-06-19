@@ -15,4 +15,4 @@ const action = (key, value, format, meta) => {
 pandoc.toJSONFilter(action);
 
 //export {action};
-
+module.exports = action;

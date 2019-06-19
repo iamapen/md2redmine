@@ -1,11 +1,10 @@
-// import {action} from "../src/filters/md2redmine";
-import * as Filter from "../src/filters/md2redmine.js";
+const Filter = {"action": require("../src/filters/md2redmine")};
 
 const pandoc = require('pandoc-filter');
 
 
-describe("action", () => {
-  test("fuga", () => {
+describe("suite1", () => {
+  test("phpCodeBlock", () => {
     const block = [
       [
         "",

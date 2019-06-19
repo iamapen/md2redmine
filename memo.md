@@ -1,15 +1,12 @@
 # memo
 
-AST確認
+AST確認方法
 
 ```bash
 pandoc --from=markdown --to=json test.md
 ```
 
 ### テスト (TODO)
-ES6とかexportとかどうするの
-```bash
-npx jest
+`npx jest` でできる。
 
-npm test
-```
+`npm test` は使い方がよくわからない。
