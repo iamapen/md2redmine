@@ -25,4 +25,7 @@ else
   exit 1
 fi
 
-pandoc --from=gfm --to=textile "$INPUT" --filter="$BASE_DIR/src/filters/md2redmine.js"
+PANDOC_OPTS="--eol=lf"
+
+pandoc $PANDOC_OPTS --from=gfm --to=textile "$INPUT" --filter="$BASE_DIR/src/filters/md2redmine.js"
+
