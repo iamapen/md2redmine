@@ -6,3 +6,10 @@ AST確認
 pandoc --from=markdown --to=json test.md
 ```
 
+### テスト (TODO)
+ES6とかexportとかどうするの
+```bash
+npx jest
+
+npm test
+```
